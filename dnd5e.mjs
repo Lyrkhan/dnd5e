@@ -422,7 +422,7 @@ Hooks.on("canvasDraw", gameCanvas => {
 Hooks.on("renderPause", (app, [html]) => {
   html.classList.add("dnd5e2");
   const img = html.querySelector("img");
-  img.src = "systems/dnd5e/ui/official/ampersand.svg";
+  img.src = "systems/dnd5e/ui/official/fq8.png";
   img.className = "";
 });
 
@@ -459,7 +459,7 @@ Hooks.on("renderSettings", (app, [html]) => {
   const badge = document.createElement("div");
   badge.classList.add("dnd5e2", "system-badge");
   badge.innerHTML = `
-    <img src="systems/dnd5e/ui/official/dnd-badge-32.webp" data-tooltip="${dnd5e.title}" alt="${dnd5e.title}">
+    <img src="systems/dnd5e/ui/official/FQ8.png" data-tooltip="${dnd5e.title}" alt="${dnd5e.title}">
     <span class="system-info">${dnd5e.version}</span>
   `;
   if ( pip ) badge.querySelector(".system-info").insertAdjacentElement("beforeend", pip);

@@ -1,18 +1,23 @@
 {
   "id": "dnd5e",
-  "title": "Dungeons & Dragons Fifth Edition",
-  "description": "A system for playing the fifth edition of the world's most popular role-playing game in the Foundry Virtual Tabletop environment.",
-  "version": "3.0.3",
+  "title": "Final Quest 8 x DnD5E",
+  "description": "Modified DnD5E system for Final Quest 8",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "11.315",
     "verified": "12"
   },
-  "url": "https://github.com/foundryvtt/dnd5e/",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
-  "download": "https://github.com/foundryvtt/dnd5e/releases/download/release-3.0.3/dnd5e-release-3.0.3.zip",
+  "url": "https://github.com/Lyrkhan/dnd5e/tree/final-quest-8",
+  "manifest": "",
+  "download": "",
   "authors": [
     {
       "name": "Atropos",
+      "url": "https://foundryvtt.com",
+      "flags": {}
+    },
+    {
+      "name": "Lyrkhan",
       "url": "https://foundryvtt.com",
       "flags": {}
     }
@@ -24,6 +29,18 @@
     "dnd5e.css"
   ],
   "packs": [
+    {
+      "name": "decks-final-quest-8",
+      "label": "Decks Final Quest 8",
+      "path": "packs/decks-final-quest-8",
+      "type": "Cards",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
     {
       "name": "heroes",
       "label": "Starter Heroes",
@@ -146,6 +163,21 @@
   ],
   "packFolders": [
     {
+      "name": "FQ8 Assets",
+      "sorting": "m",
+      "color": "#3aa123",
+      "folders": [
+        {
+          "name": "Cards",
+          "sorting": "m",
+          "color": "#317d0e",
+          "packs": [
+            "decks-final-quest-8"
+          ]
+        }
+      ]
+    },
+    {
       "name": "D&D SRD Content",
       "sorting": "m",
       "color": "#cd2c1e",
@@ -191,6 +223,12 @@
   ],
   "languages": [
     {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json",
+      "flags": {}
+    },
+    {
       "lang": "en",
       "name": "English",
       "path": "lang/en.json",
@@ -205,17 +243,17 @@
     },
     {
       "type": "setup",
-      "url": "systems/dnd5e/ui/official/dnd5e-repo.jpg",
-      "thumbnail": "systems/dnd5e/ui/official/dnd5e-thumbnail.jpg"
+      "url": "systems/dnd5e/ui/official/FQ8-repo.jpg",
+      "thumbnail": "systems/dnd5e/ui/official/FQ8-repo.jpg"
     }
   ],
   "socket": true,
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "attributes.hp",
-  "background": "systems/dnd5e/ui/official/dnd5e-background.webp",
+  "background": "systems/dnd5e/ui/official/fq8-background.jpg",
   "flags": {
-    "needsMigrationVersion": "3.0.3",
+    "needsMigrationVersion": "1.0.0",
     "compatibleMigrationVersion": "0.8",
     "hotReload": {
       "extensions": ["css", "hbs", "json"],

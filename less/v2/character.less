@@ -572,7 +572,7 @@
         .meter {
           &.hit-points {
             height: 32px;
-            font-size: var(--font-size-16);
+            font-size: var(--font-size-18);
 
             .progress::before {
               background: linear-gradient(to right, var(--dnd5e-color-hp-1) 0%, var(--dnd5e-color-hp-2) 100%);
@@ -584,12 +584,45 @@
           }
 
           &.hit-dice {
-            height: 25px;
-            font-size: var(--font-size-14);
+            height: 18px;
+            font-size: var(--font-size-12);
 
             &.progress::before {
               background: linear-gradient(to right, var(--dnd5e-color-hd-1) 0%, var(--dnd5e-color-hd-2) 100%);
               border-right: var(--border-width) solid var(--dnd5e-color-hd-3);
+            }
+          }
+
+          &.action-points {
+            height: 25px;
+            font-size: var(--font-size-16);
+
+            .progress::before {
+              background: linear-gradient(to right, var(--fq8-color-action-1) 0%, var(--fq8-color-action-2) 100%);
+              border-right: var(--border-width) solid var(--fq8-color-action-3);
+              border-radius: 4px 0 0 4px;
+            }
+          }
+
+          &.mana-points {
+            height: 22px;
+            font-size: var(--font-size-14);
+
+            .progress::before {
+              background: linear-gradient(to right, var(--fq8-color-mana-1) 0%, var(--fq8-color-mana-2) 100%);
+              border-right: var(--border-width) solid var(--fq8-color-mana-3);
+              border-radius: 4px 0 0 4px;
+            }
+          }
+
+          &.zeal-points {
+            height: 22px;
+            font-size: var(--font-size-14);
+
+            .progress::before {
+              background: linear-gradient(to right, var(--fq8-color-zeal-1) 0%, var(--fq8-color-zeal-2) 100%);
+              border-right: var(--border-width) solid var(--fq8-color-zeal-3);
+              border-radius: 4px 0 0 4px;
             }
           }
 

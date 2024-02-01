@@ -174,7 +174,59 @@
                                 {{/each}}
                             </div>
                         </div>
+                        <div class="lozenges" >
+                            {{!-- Hand Score --}}
+                            <div class="lozenge">
+                                {{#with system.fq.cards}}
+                                    <div class="value">
+                                        {{#if @root.editable}}
+                                            <input class="value" type="text" name="system.fq.cards.hand"
+                                                   value="{{ hand }}" placeholder="10"
+                                                   data-dtype="Number">
+                                        {{else}}
+                                            <span class="value">{{ hand }}</span>
+                                        {{/if}}
+                                    </div>
+                                {{/with}}
+                                <div class="label roboto-condensed-upper">{{ localize "FQ8.Hand" }}</div>
+                            </div>
 
+                            {{!-- Initiative --}}
+                            <div class="lozenge {{#unless editable}}{{ rollableClass }}{{/unless}}"
+                                 {{#unless editable}}data-action="rollInitiative"{{/unless}}>
+                                <div class="value">
+                                    {{#if editable}}
+                                        <a class="config-button" data-action="initiative"
+                                           data-tooltip="DND5E.InitiativeConfig"
+                                           aria-label="{{ localize "DND5E.InitiativeConfig" }}">
+                                            <i class="fas fa-cog"></i>
+                                        </a>
+                                    {{else}}
+                                        <span>
+                                            {{ dnd5e-numberFormat system.attributes.init.total signDisplay="always" }}
+                                        </span>
+                                    {{/if}}
+                                </div>
+                                <div class="label roboto-condensed-upper">{{ localize "DND5E.Initiative" }}</div>
+                            </div>
+
+                            {{!-- Pick Score --}}
+                            <div class="lozenge">
+                                {{#with system.fq.cards}}
+                                    <div class="value">
+                                        {{#if @root.editable}}
+                                            <input class="value" type="text" name="system.fq.cards.pick"
+                                                   value="{{ pick }}" placeholder="10"
+                                                   data-dtype="Number">
+                                        {{else}}
+                                            <span class="value">{{ pick }}</span>
+                                        {{/if}}
+                                    </div>
+                                {{/with}}
+                                <div class="label roboto-condensed-upper">{{ localize "FQ8.Pick" }}</div>
+                            </div>
+                        </div>
+                        <!--
                         {{!-- Initiative, Speed, & Proficiency --}}
                         <div class="lozenges">
 
@@ -219,6 +271,7 @@
                                 <div class="label roboto-condensed-upper">{{ localize "DND5E.Proficiency" }}</div>
                             </div>
                         </div>
+                        -->
 
                         {{!-- Hit Points --}}
                         <div class="meter-group">
@@ -262,10 +315,10 @@
                             <div class="label roboto-condensed-upper">
                                 <span>{{ localize "DND5E.HitDice" }}</span>
                                 {{#if editable}}
-                                <a class="config-button" data-action="hitDice" data-tooltip="DND5E.HitDiceConfig"
-                                   aria-label="{{ localize "DND5E.HitDiceConfig" }}">
-                                    <i class="fas fa-cog"></i>
-                                </a>
+                                    <a class="config-button" data-action="hitDice" data-tooltip="DND5E.HitDiceConfig"
+                                       aria-label="{{ localize "DND5E.HitDiceConfig" }}">
+                                        <i class="fas fa-cog"></i>
+                                    </a>
                                 {{/if}}
                             </div>
                             <div class="meter hit-dice progress" role="meter" aria-valuemin="0"
@@ -276,6 +329,150 @@
                                     <span class="separator">&sol;</span>
                                     <span class="max">{{ hd.max }}</span>
                                 </div>
+                            </div>
+                        </div>
+
+                        {{!-- Action Points --}}
+                        <div class="meter-group">
+                            <div class="label roboto-condensed-upper">
+                                <span>{{ localize "FQ8.ActionPoints" }}</span>
+                            </div>
+                            {{#with system.fq.action}}
+                                <div class="meter sectioned action-points">
+                                    <div class="progress action-points" role="meter" aria-valuemin="0"
+                                         aria-valuenow="{{ value }}" aria-valuemax="{{ max }}"
+                                         style="--bar-percentage: {{ pct }}%">
+                                        {{#if @root.editable}}
+                                        <div class="label" style="display: flex">
+                                            <input class="value" type="text" name="system.fq.action.value"
+                                               value="{{ value }}" placeholder="10"
+                                               data-dtype="Number">
+                                            <span class="separator">&sol;</span>
+                                            <input class="max" type="text" name="system.fq.action.max"
+                                               value="{{ max }}" placeholder="10"
+                                               data-dtype="Number">
+                                        </div>
+                                        {{else}}
+                                            <div class="label" style="padding: 2px 8px;">
+                                                <span class="value">{{ value }}</span>
+                                                <span class="separator">&sol;</span>
+                                                <span class="max">{{ max }}</span>
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            {{/with}}
+                        </div>
+
+                        {{!-- Mana Points --}}
+                        <div class="meter-group">
+                            <div class="label roboto-condensed-upper">
+                                <span>{{ localize "FQ8.ManaPoints" }}</span>
+                            </div>
+                            {{#with system.fq.mana}}
+                                <div class="meter sectioned mana-points">
+                                    <div class="progress mana-points" role="meter" aria-valuemin="0"
+                                         aria-valuenow="{{ value }}" aria-valuemax="{{ max }}"
+                                         style="--bar-percentage: {{ pct }}%">
+                                        {{#if @root.editable}}
+                                            <div class="label" style="display: flex">
+                                                <input class="value" type="text" name="system.fq.mana.value"
+                                                       value="{{ value }}" placeholder="10"
+                                                       data-dtype="Number">
+                                                <span class="separator">&sol;</span>
+                                                <input class="max" type="text" name="system.fq.mana.max"
+                                                       value="{{ max }}" placeholder="10"
+                                                       data-dtype="Number">
+                                            </div>
+                                        {{else}}
+                                            <div class="label" style="padding: 2px 8px;">
+                                                <span class="value">{{ value }}</span>
+                                                <span class="separator">&sol;</span>
+                                                <span class="max">{{ max }}</span>
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            {{/with}}
+                        </div>
+
+                        {{!-- Zeal Points --}}
+                        <div class="meter-group">
+                            <div class="label roboto-condensed-upper">
+                                <span>{{ localize "FQ8.ZealPoints" }}</span>
+                            </div>
+                            {{#with system.fq.zeal}}
+                                <div class="meter sectioned zeal-points">
+                                    <div class="progress zeal-points" role="meter" aria-valuemin="0"
+                                         aria-valuenow="{{ value }}" aria-valuemax="{{ max }}"
+                                         style="--bar-percentage: {{ pct }}%">
+                                        {{#if @root.editable}}
+                                            <div class="label" style="display: flex">
+                                                <input class="value" type="text" name="system.fq.zeal.value"
+                                                       value="{{ value }}" placeholder="10"
+                                                       data-dtype="Number">
+                                                <span class="separator">&sol;</span>
+                                                <input class="max" type="text" name="system.fq.zeal.max"
+                                                       value="{{ max }}" placeholder="10"
+                                                       data-dtype="Number">
+                                            </div>
+                                        {{else}}
+                                            <div class="label" style="padding: 2px 8px;">
+                                                <span class="value">{{ value }}</span>
+                                                <span class="separator">&sol;</span>
+                                                <span class="max">{{ max }}</span>
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            {{/with}}
+                        </div>
+
+                        <div class="lozenges critical-score" style="margin-top: 8px;">
+                            {{!-- Critical --}}
+                            <div class="lozenge">
+                                {{#with system.fq.attributes}}
+                                <div class="value">
+                                    {{#if @root.editable}}
+                                        <input class="value" type="text" name="system.fq.attributes.critical"
+                                           value="{{ critical }}" placeholder="10"
+                                           data-dtype="Number">
+                                    {{else}}
+                                        <span class="value">{{ critical }}</span>
+                                    {{/if}}
+                                </div>
+                                {{/with}}
+                                <div class="label roboto-condensed-upper">{{ localize "FQ8.CriticalScore" }}</div>
+                            </div>
+
+                            {{!-- Speed --}}
+                            <div class="lozenge movement-score" data-attribution="attributes.movement">
+                                <div class="value">
+                                    {{#if editable}}
+                                        <a class="config-button" data-action="movement" data-tooltip="DND5E.MovementConfig">
+                                            <i class="fas fa-cog"></i>
+                                        </a>
+                                    {{else}}
+                                        {{ speed.squareValue }}
+                                    {{/if}}
+                                </div>
+                                <div class="label roboto-condensed-upper">{{ speed.label }}</div>
+                            </div>
+
+                            {{!-- Evasion --}}
+                            <div class="lozenge evasion-score">
+                                {{#with system.fq.attributes}}
+                                    <div class="value">
+                                        {{#if @root.editable}}
+                                            <input class="value" type="text" name="system.fq.attributes.evasion"
+                                                   value="{{ evasion }}" placeholder="10"
+                                                   data-dtype="Number">
+                                        {{else}}
+                                            <span class="value">{{ evasion }}</span>
+                                        {{/if}}
+                                    </div>
+                                {{/with}}
+                                <div class="label roboto-condensed-upper">{{ localize "FQ8.EvasionScore" }}</div>
                             </div>
                         </div>
                     </div>

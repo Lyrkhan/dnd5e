@@ -1,12 +1,12 @@
-import CharacterData from "./character.mjs";
+import CharacterDataFQ from "./character-fq.mjs";
 import GroupData from "./group.mjs";
-import NPCData from "./npc.mjs";
+import NPCDataFQ from "./npc-fq.mjs";
 import VehicleData from "./vehicle.mjs";
 
 export {
-  CharacterData,
+  CharacterDataFQ,
   GroupData,
-  NPCData,
+  NPCDataFQ,
   VehicleData
 };
 export {default as GroupSystemFlags} from "./group-system-flags.mjs";
@@ -17,8 +17,8 @@ export {default as DetailsFields} from "./templates/details.mjs";
 export {default as TraitsFields} from "./templates/traits.mjs";
 
 export const config = {
-  character: CharacterData,
+  character: CharacterDataFQ,
   group: GroupData,
-  npc: NPCData,
+  npc: NPCDataFQ,
   vehicle: VehicleData
 };

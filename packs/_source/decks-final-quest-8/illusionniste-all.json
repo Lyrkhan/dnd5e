@@ -1,0 +1,696 @@
+{
+  "_id": "S46XvYfbwN84IIww",
+  "name": "Illusionniste All",
+  "type": "deck",
+  "description": "",
+  "img": "systems/dnd5e/images/cartes/Illusionniste/dos.PNG",
+  "cards": [
+    {
+      "_id": "1Ez23gESLulfjOXr",
+      "name": "Allonge magique",
+      "description": "{\n  \"action\": \"-2\",\n  \"zeal\": \"1\",\n  \"addingRolls\": [\n    {\n      \"title\": \"Bonus de portée\",\n      \"formula\": \"1\",\n      \"effects\": [\n        {\n          \"result\": \"1\",\n          \"timer\": \"300\",\n          \"data\": [\n            {\n              \"label\": \"Bonus de portée +1\",\n              \"icon\": \"icons/skills/targeting/crosshair-bars-yellow.webp\",\n              \"changes\": [\n                {\n                  \"key\": \"data.attributes.rangeBonus\",\n                  \"value\": \"1\",\n                  \"mode\": \"2\"\n                }\n              ],\n              \"duration\": {\n                \"startTime\": \"null\",\n                \"rounds\": \"null\",\n                \"turns\": \"0\"\n              }\n            }\n          ],\n          \"other\": \"L'illusioniste augmente sa portée de 1\"\n        }\n      ]\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/niv%201/Allonge%20magique.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 14,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.1Ez23gESLulfjOXr",
+      "cards": []
+    },
+    {
+      "_id": "ciLvRcgGS4BMktpZ",
+      "name": "Fouet enchantée",
+      "description": "{\n  \"action\": \"-5\",\n  \"mana\": \"-1\",\n  \"damage\": \"(@dex+@wis+1d8)[force]\",\n  \"zeal\": \"1\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"1\",\n  \"addingRolls\": [\n    {\n      \"title\": \"Bonus de portée\",\n      \"formula\": \"1\",\n      \"effects\": [\n        {\n          \"result\": \"1\",\n          \"name\": \"Bonus de portée +1\",\n          \"self\": true,\n          \"other\": \"Effet Bonus de portée +1 appliqué sur le personnage\"\n        }\n      ]\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/niv%201/Fouet%20enchant%C3%A9e.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 0,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.ciLvRcgGS4BMktpZ",
+      "cards": []
+    },
+    {
+      "_id": "iHqKrw2OMSA5DJrs",
+      "name": "Frappe avec salto arrière",
+      "description": "{\n  \"action\": \"-5\",\n  \"mana\": \"-1\",\n  \"damage\": \"(@str + 1d10)[slashing]\",\n  \"zeal\": \"-1\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"1\",\n  \"other\": [\"Reculez de @dex case(s) dans le sens opposé à la cible\"],\n  \"addingRolls\": [\n      {\n        \"title\": \"Bonus de portée\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"self\": \"true\",\n            \"data\": [\n              {\n                \"label\": \"Bonus de portée +1\",\n                \"icon\": \"icons/skills/targeting/crosshair-bars-yellow.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.rangeBonus\",\n                    \"value\": \"1\",\n                    \"mode\": \"2\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"null\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"Augmente la portée de 1\"\n          }\n        ]\n      },\n      {\n        \"title\": \"Recul\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"self\": \"true\",\n            \"data\": [\n              {\n                \"label\": \"Recul de @dex case\",\n                \"icon\": \"icons/skills/movement/feet-winged-boots-glowing-yellow.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.movement.walk\",\n                    \"value\": \"5*@dex\",\n                    \"mode\": \"2\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"1\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"Le déplacement de la cible est augmenté de @dex\"\n          }\n        ]\n      }\n    ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/niv%201/Frappe%20avec%20salto%20arri%C3%A8re.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 15,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.iHqKrw2OMSA5DJrs",
+      "cards": []
+    },
+    {
+      "_id": "j7csGWROwCr10rE1",
+      "name": "Frappe Illusoire",
+      "description": "{\n  \"action\": \"-7\",\n  \"damage\": \"(@str+XXX+1d6)[slashing]\",\n  \"xvalue\": \"rangeBonus\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"1\"\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/niv%201/Frappe%20Illusoire.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 9,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.j7csGWROwCr10rE1",
+      "cards": []
+    },
+    {
+      "_id": "w4Wl2Ie5tkhgFdoL",
+      "name": "Inspiration chantée",
+      "description": "{\n  \"action\": \"-2\",\n  \"zeal\": \"-1\",\n  \"minReach\": \"0\",\n  \"maxReach\": \"1\",\n  \"nbTargets\": \"999999\",\n  \"draw\":\"1\",\n  \"replayable\": \"@cha\",\n  \"addingRolls\": [\n    {\n      \"title\": \"Inspiration Chantée\",\n      \"formula\": \"1\",\n      \"effects\": [\n        {\n          \"result\": \"1\",\n          \"timer\": \"300\",\n          \"data\": [\n            {\n              \"label\": \"Bonus de critique +1\",\n              \"icon\": \"icons/skills/targeting/crosshair-mark-rough-pink.webp\",\n              \"changes\": [\n                {\n                  \"key\": \"data.attributes.critical\",\n                  \"value\": \"1\",\n                  \"mode\": \"2\"\n                }\n              ],\n              \"duration\": {\n                \"startTime\": \"null\",\n                \"rounds\": \"null\",\n                \"turns\": \"0\"\n              }\n            }\n          ],\n          \"other\": \"Toutes les cibles gagnent 1 en critique jusqu'à la fin du combat\"\n        }\n      ]\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/niv%201/Inspiration%20Chant%C3%A9e.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 12,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.w4Wl2Ie5tkhgFdoL",
+      "cards": []
+    },
+    {
+      "_id": "CJJ1b8KDVNq82syD",
+      "name": "Shuriken empoisonné",
+      "description": "{\n  \"damage\": \"1d8[poison]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"3\",\n  \"action\": \"-5\",\n  \"zeal\": \"+1\",\n  \"addingRolls\": [\n        {\n            \"title\": \"Empoisonnement\",\n            \"formula\": \"1d4\",\n            \"effects\": [\n                {\n                    \"result\": \"4\",\n                    \"data\": [\n                        {\n                            \"label\": \"Empoisonnement\",\n                            \"icon\": \"icons/skills/melee/strike-scythe-fire-green.webp\",\n                            \"changes\": [\n                                {\n                                    \"key\": \"data.attributes.DOT\",\n                                    \"value\": \"max(0,@cha)\",\n                                    \"mode\": \"2\"\n                                },\n                {\n                  \"key\": \"macro.tokenMagic\",\n                  \"value\": \"glow\",\n                  \"mode\": \"0\"\n                }\n                            ],\n                            \"duration\": {\n                                \"startTime\": \"null\",\n                                \"rounds\": \"4\",\n                                \"turns\": \"null\"\n                            }\n                        }\n                    ],\n                    \"other\": \"L'effet Empoisonnement a été appliqué, la cible subit @cha dégâts par tour pendant 4 tours\"\n                }\n            ]\n        }\n    ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/niv%201/Shuriken%20empoison%C3%A9.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 2,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.CJJ1b8KDVNq82syD",
+      "cards": []
+    },
+    {
+      "_id": "qULH68SiXUFgqiMW",
+      "name": "Vases communicants",
+      "description": "[\n  {\n    \"name\": \"Transformer 1 mana en 4 actions\",\n    \"mana\": \"-1\",\n    \"action\": \"4\",\n    \"replayable\": \"max(1,1+@wis)\"\n  },\n  {\n    \"name\": \"Transformer 4 actions en 1 mana\",\n    \"mana\": \"1\",\n    \"action\": \"-4\",\n    \"replayable\": \"max(1,1+@wis)\"\n  }\n]",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/niv%201/Vases%20communicants.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 4,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.qULH68SiXUFgqiMW",
+      "cards": []
+    },
+    {
+      "_id": "nuZsfMi9pSrv640C",
+      "name": "Images Miroir",
+      "description": "{\n  \"zeal\": \"-2\",\n  \"reactif\": \"true\",\n  \"addingRolls\": [\n        {\n            \"title\": \"Images Miroir\",\n            \"formula\": \"1\",\n            \"effects\": [\n                {\n                    \"result\": \"1\",\n                    \"timer\": \"300\",\n                    \"data\": [\n                        {\n                            \"label\": \"Images Miroir\",\n                            \"flags\": {\"expireOnDamage\": \"true\"},\n                            \"icon\": \"icons/magic/defensive/illusion-evasion-echo-purple.webp\",\n                            \"changes\": [\n                                {\n                                    \"key\": \"data.attributes.evasion\",\n                                    \"value\": \"@dex\",\n                                    \"mode\": \"2\"\n                                },\n                {\n                  \"key\": \"macro.tokenMagic\",\n                  \"value\": \"images\",\n                  \"mode\": \"0\"\n                }\n                            ],\n                            \"duration\": {\n                                \"startTime\": \"null\",\n                                \"rounds\": \"null\",\n                                \"turns\": \"null\"\n                            }\n                        }\n                    ],\n                    \"other\": \"Des images miroirs apparaissent autour de vous. Si vous êtes touché par n'importe quelle source, vous perdez l'effet (action MJ)\"\n                }\n            ]\n        }\n    ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%202/Images%20Miroir.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 19,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.nuZsfMi9pSrv640C",
+      "cards": []
+    },
+    {
+      "_id": "x3m1pIKVBiOp17mS",
+      "name": "Attaque latérale",
+      "description": "{\n  \"action\": \"-4\",\n  \"damage\": \"(@str+1d8)[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"1\",\n  \"nbTargets\": \"2*(1+XXX)\",\n  \"xvalue\": \"rangeBonus\",\n  \"customEval\": [\n    {\n      \"test\": \"!game.user.targets.size || ([...game.user.targets].filter(t =&gt;(t.x === game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.x)).length === [...game.user.targets].length) || ([...game.user.targets].filter(t =&gt;(t.y === game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.y)).length === [...game.user.targets].length)\",\n      \"message\": \"Les cibles doivent être sur la même ligne que le lanceur de sort\"\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%202/Attaque%20lat%C3%A9rale.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 7,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.x3m1pIKVBiOp17mS",
+      "cards": []
+    },
+    {
+      "_id": "X2wclttpxi7Irrjf",
+      "name": "Pioche II",
+      "description": "{\"action\":\"-2\",\"draw\":\"2\",\"other\":[\"Vous piochez 2 cartes\"]}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%202/PiocheII.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 20,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.X2wclttpxi7Irrjf",
+      "cards": []
+    },
+    {
+      "_id": "AwTNg0sqUN2a4sUT",
+      "name": "Pioche III",
+      "description": "{\"action\":\"-3\",\"draw\":\"3\",\"other\":[\"Vous piochez 3 cartes\"]}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%203/PiocheIII.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 18,
+      "flags": {},
+      "value": null,
+      "width": null,
+      "height": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.AwTNg0sqUN2a4sUT",
+      "cards": []
+    },
+    {
+      "_id": "IZWk1vPbuijF0GMM",
+      "name": "Shuriken",
+      "description": "{\n  \"damage\": \"1d6[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"3\",\n  \"action\": \"-3\",\n  \"addingRolls\": [\n        {\n            \"title\": \"Saignement\",\n            \"formula\": \"1d3\",\n            \"effects\": [\n                {\n                    \"result\": \"3\",\n                    \"data\": [\n                        {\n                            \"label\": \"Saignement\",\n                            \"icon\": \"icons/skills/melee/blood-slash-foam-red.webp\",\n                            \"changes\": [\n                                {\n                                    \"key\": \"data.attributes.DOT\",\n                                    \"value\": \"max(0,@cha)\",\n                                    \"mode\": \"2\"\n                                },\n                {\n                  \"key\": \"macro.tokenMagic\",\n                  \"value\": \"anti-aura\",\n                  \"mode\": \"0\"\n                }\n                            ],\n                            \"duration\": {\n                                \"startTime\": \"null\",\n                                \"rounds\": \"3\",\n                                \"turns\": \"null\"\n                            }\n                        }\n                    ],\n                    \"other\": \"L'effet Saignement a été appliqué, la cible subit @cha dégâts par tour pendant 2 tours\"\n                }\n            ]\n        }\n    ]\n}",
+      "type": "base",
+      "suit": "",
+      "value": null,
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%203/Shuriken.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 10,
+      "flags": {},
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.IZWk1vPbuijF0GMM",
+      "cards": []
+    },
+    {
+      "_id": "BDyvCdX4IV8qWRvJ",
+      "name": "Passage vers le plan éthéré",
+      "description": "{\n  \"action\": \"-7\",\n  \"zeal\": \"-2\",\n  \"damage\": \"XXX[force]\",\n  \"mana\": \"-1\",\n  \"xvalue\": \"reach\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"4\",\n  \"other\": [\"Echange de place entre la cible et le lanceur du sort\"]\n}",
+      "type": "base",
+      "suit": "",
+      "value": null,
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%203/Passage%20vers%20le%20plan%20%C3%A9th%C3%A9r%C3%A9.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 16,
+      "flags": {},
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.BDyvCdX4IV8qWRvJ",
+      "cards": []
+    },
+    {
+      "_id": "QW8AHfDyBDLXxsw6",
+      "name": "Nuage de dague",
+      "description": "{\n  \"action\": \"-8\",\n  \"mana\": \"-1\",\n  \"zeal\": \"-1\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"xvalue\": \"rangeBonus\",\n  \"addingRolls\": [\n    {\n      \"title\": \"Nuage de dague\",\n      \"formula\": \"1\",\n      \"effects\": [\n        {\n          \"result\": \"1\",\n          \"timer\": \"300\",\n          \"data\": [\n            {\n              \"label\": \"Nuage de dague\",\n              \"icon\": \"icons/skills/melee/swords-triple-orange.webp\",\n              \"changes\": [\n                {\n                  \"key\": \"data.attributes.DOT\",\n                  \"value\": \"XXX + 1d8\",\n                  \"mode\": \"2\"\n                },\n                {\n                  \"key\": \"macro.tokenMagic\",\n                  \"value\": \"scan\",\n                  \"mode\": \"0\"\n                },\n                {\n                  \"key\": \"macro.tokenMagic\",\n                  \"value\": \"smoke\",\n                  \"mode\": \"0\"\n                }\n              ],\n              \"duration\": {\n                \"startTime\": \"null\",\n                \"rounds\": \"@cha\",\n                \"turns\": \"0\"\n              }\n            }\n          ],\n          \"other\": \"L'effet nuage de dague a été appliqué à la cible\"\n        }\n      ]\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%205/Nuage%20de%20dague.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 17,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.QW8AHfDyBDLXxsw6",
+      "cards": []
+    },
+    {
+      "_id": "d2Oed9gX2p6lqrgM",
+      "name": "Volée de shuriken",
+      "description": "{\n  \"action\": \"-7\",\n  \"mana\": \"-1\",\n  \"zeal\": \"-1\",\n  \"damage\": \"(XXX+1d10)[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"nbTargets\": \"@dex\",\n  \"xvalue\": \"rangeBonus\"\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%205/Vol%C3%A9e%20de%20shuriken.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 21,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.d2Oed9gX2p6lqrgM",
+      "cards": []
+    },
+    {
+      "_id": "4VIaiWmFrEnPMUyN",
+      "name": "Apothicaire 1",
+      "description": "[\n  {\n    \"name\": \"Potion de vie\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"heal\": \"@wis+1d4\"\n  },\n  {\n    \"name\": \"Potion d'allonge\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Bonus de portée\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Bonus de portée +@wis\",\n                \"icon\": \"icons/skills/targeting/crosshair-bars-yellow.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.rangeBonus\",\n                    \"value\": \"@wis\",\n                    \"mode\": \"2\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"3\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"L'illusioniste augmente sa portée de @wis\"\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"name\": \"Potion de vitesse\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Vitesse\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Vitesse + 1 + @wis\",\n                \"icon\": \"icons/skills/movement/feet-winged-boots-glowing-yellow.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.movement.walk\",\n                    \"value\": \"5+(5*@wis)\",\n                    \"mode\": \"2\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"3\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"Le déplacement de la cibles est augmenté de 1+@wis\"\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"name\": \"Potion de force terrestre\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Effet de Terre\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Effet de Terre\",\n                \"icon\": \"icons/magic/earth/barrier-stone-explosion-debris.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.evasion\",\n                    \"value\": \"-@wis\",\n                    \"mode\": \"2\"\n                  },\n                  {\n                    \"key\": \"macro.tokenMagic\",\n                    \"value\": \"outline\",\n                    \"mode\": \"0\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"3\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"L'effet de terre a été appliqué aux cibles\"\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"name\": \"Potion de vent\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Effet air\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Effet air\",\n                \"icon\": \"icons/magic/air/wind-tornado-spiral-teal-green.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.movement.walk\",\n                    \"value\": \"-(5*@wis)\",\n                    \"mode\": \"2\"\n                  },\n                  {\n                    \"key\": \"macro.tokenMagic\",\n                    \"value\": \"fumes\",\n                    \"mode\": \"0\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"3\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"L'Effet air a été appliqué aux cibles\"\n          }\n        ]\n      }\n    ]\n  }\n]",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%204/Apothicaire.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 1,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.4VIaiWmFrEnPMUyN",
+      "cards": []
+    },
+    {
+      "_id": "Dsy86M396ZFa5lqD",
+      "name": "Attaque en cercle",
+      "description": "{\n  \"action\": \"-5\",\n  \"mana\": \"-1\",\n  \"zeal\": \"+1\",\n  \"damage\": \"(@str+1d6)[slashing]\",\n  \"minReach\": \"4-XXX\",\n  \"maxReach\": \"5\",  \n  \"nbTargets\": \"99999\",\n  \"xvalue\": \"rangeBonus\"\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%205/Attaque%20en%20cercle.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 11,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.Dsy86M396ZFa5lqD",
+      "cards": []
+    },
+    {
+      "_id": "aKprA4r9cSQtiyau",
+      "name": "Prise en traitre",
+      "description": "{\n  \"zeal\": \"-2\",\n  \"xvalue\": \"rangeBonus\",\n  \"addingRolls\": [\n    {\n      \"title\": \"Bonus de dégâts\",\n      \"formula\": \"1\",\n      \"effects\": [\n        {\n          \"result\": \"1\",\n          \"timer\": \"300\",\n          \"data\": [\n            {\n              \"label\": \"Bonus de dégâts\",\n              \"icon\": \"icons/magic/defensive/illusion-evasion-echo-purple.webp\",\n              \"changes\": [\n                {\n                  \"key\": \"data.bonuses.All-Damage\",\n                  \"value\": \"XXX + 1d@dex\",\n                  \"mode\": \"2\"\n                },\n                {\n                  \"key\": \"data.bonuses.other.damage\",\n                  \"value\": \"XXX + 1d@dex\",\n                  \"mode\": \"2\"\n                },\n                {\n                  \"key\": \"macro.tokenMagic\",\n                  \"value\": \"mantle-of-madness\",\n                  \"mode\": \"0\"\n                }\n              ],\n              \"duration\": {\n                \"startTime\": \"null\",\n                \"rounds\": \"1\",\n                \"turns\": \"null\"\n              }\n            }\n          ],\n          \"other\": \"Augmente les dégâts de XXX + 1d@dex pour ce tour\"\n        }\n      ]\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%205/Prise%20en%20traitre.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 5,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.aKprA4r9cSQtiyau",
+      "cards": []
+    },
+    {
+      "_id": "c6dRAq4DXQiiSPvI",
+      "name": "Peste Noire",
+      "description": "{\n  \"action\": \"-9\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"mana\": \"-1\",\n  \"zeal\": \"-1\",\n  \"replayable\": \"@con + 1\",\n  \"executeEval\": \"([...game.user.targets]).forEach( target =&gt; game.actors.get(target.data.actorId).createEmbeddedDocuments(\\\"ActiveEffect\\\", game.actors.get(target.data.actorId).data.effects.filter(t =&gt; t.data.flags.isFQEffects).map(ef =&gt; ef.data)))\"\n}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%204/Peste%20noire.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 13,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.c6dRAq4DXQiiSPvI",
+      "cards": []
+    },
+    {
+      "_id": "qWTvPJsBE7kWU1FX",
+      "name": "Attaque diagonale",
+      "description": "{\n  \"action\": \"-6\",\n  \"mana\": \"-1\",\n  \"zeal\": \"+1\",\n  \"damage\": \"(@str+1d12)[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"nbTargets\": \"4*(1+trunc(XXX/2))\",\n  \"xvalue\": \"rangeBonus\",\n  \"customEval\": [\n    {\n      \"test\": \"!game.user.targets.size || ([...game.user.targets].filter(t =&gt; Math.abs(t.x - game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.x) === Math.abs(t.y - game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.y)).length === [...game.user.targets].length)\",\n      \"message\": \"Les cibles doivent être sur les diagonales du lanceur\"\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "value": null,
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%204/Attaque%20diagonale.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": "T6PMpPpuWngnosq0",
+      "rotation": 0,
+      "sort": 22,
+      "flags": {},
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.qWTvPJsBE7kWU1FX",
+      "cards": []
+    },
+    {
+      "_id": "ZwTYIrYx5pTT6op0",
+      "name": "Danse enfiévrée",
+      "description": "{\n  \"action\": \"-2\",\n  \"mana\": \"-1\",\n  \"minReach\": \"0\",\n  \"maxReach\": \"1\",\n  \"nbTargets\": \"999999\",\n  \"draw\":\"1\",\n  \"replayable\": \"@cha\",\n  \"addingRolls\": [\n    {\n      \"title\": \"Danse enfiévrée\",\n      \"formula\": \"1\",\n      \"effects\": [\n        {\n          \"result\": \"1\",\n          \"timer\": \"300\",\n          \"data\": [\n            {\n              \"label\": \"Bonus d'esquive +1\",\n              \"icon\": \"icons/magic/air/air-pressure-shield-blue.webp\",\n              \"changes\": [\n                {\n                  \"key\": \"data.attributes.evasion\",\n                  \"value\": \"1\",\n                  \"mode\": \"2\"\n                }\n              ],\n              \"duration\": {\n                \"startTime\": \"null\",\n                \"rounds\": \"null\",\n                \"turns\": \"0\"\n              }\n            }\n          ],\n          \"other\": \"Toutes les cibles gagnent 1 en esquive jusqu'à la fin du combat\"\n        }\n      ]\n    }\n  ]\n}",
+      "type": "base",
+      "suit": "",
+      "value": null,
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%204/Danse%20enfi%C3%A9vr%C3%A9e.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": "T6PMpPpuWngnosq0",
+      "rotation": 0,
+      "sort": 6,
+      "flags": {},
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.ZwTYIrYx5pTT6op0",
+      "cards": []
+    },
+    {
+      "_id": "zTH9BlHy5KtHiQk4",
+      "name": "Apothicaire 2",
+      "description": "[\n  {\n    \"name\": \"Potion de vie\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"heal\": \"@wis+1d4\"\n  },\n  {\n    \"name\": \"Potion d'allonge\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Bonus de portée\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Bonus de portée +@wis\",\n                \"icon\": \"icons/skills/targeting/crosshair-bars-yellow.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.rangeBonus\",\n                    \"value\": \"@wis\",\n                    \"mode\": \"2\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"3\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"L'illusioniste augmente sa portée de @wis\"\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"name\": \"Potion de vitesse\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Vitesse\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Vitesse + 1 + @wis\",\n                \"icon\": \"icons/skills/movement/feet-winged-boots-glowing-yellow.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.movement.walk\",\n                    \"value\": \"5+(5*@wis)\",\n                    \"mode\": \"2\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"3\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"Le déplacement de la cibles est augmenté de 1+@wis\"\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"name\": \"Potion de feu\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Brulure\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Brulure\",\n                \"icon\": \"icons/magic/fire/explosion-embers-evade-silhouette.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.DOT\",\n                    \"value\": \"1\",\n                    \"mode\": \"2\"\n                  },\n                  {\n                    \"key\": \"macro.tokenMagic\",\n                    \"value\": \"fire-aura\",\n                    \"mode\": \"0\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"@wis\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"L'effet Brulure a été appliqué aux cibles\"\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"name\": \"Potion de gel\",\n    \"zeal\": \"+1\",\n    \"minReach\": \"0\",\n    \"maxReach\": \"1\",\n    \"action\": \"-3\",\n    \"addingRolls\": [\n      {\n        \"title\": \"Gel\",\n        \"formula\": \"1\",\n        \"effects\": [\n          {\n            \"result\": \"1\",\n            \"timer\": \"300\",\n            \"data\": [\n              {\n                \"label\": \"Gel\",\n                \"icon\": \"icons/magic/water/barrier-ice-crystal-wall-faceted.webp\",\n                \"changes\": [\n                  {\n                    \"key\": \"data.attributes.action.max\",\n                    \"value\": \"-@wis\",\n                    \"mode\": \"2\"\n                  },\n                  {\n                    \"key\": \"data.attributes.action.value\",\n                    \"value\": \"-@wis\",\n                    \"mode\": \"2\"\n                  },\n                  {\n                    \"key\": \"macro.tokenMagic\",\n                    \"value\": \"glacial-aura\",\n                    \"mode\": \"0\"\n                  }\n                ],\n                \"duration\": {\n                  \"startTime\": \"null\",\n                  \"rounds\": \"3\",\n                  \"turns\": \"0\"\n                }\n              }\n            ],\n            \"other\": \"Le Gel a été appliqué aux cibles\"\n          }\n        ]\n      }\n    ]\n  }\n]",
+      "type": "base",
+      "suit": "",
+      "value": null,
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%205/Apothicaire%202.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": "T6PMpPpuWngnosq0",
+      "rotation": 0,
+      "sort": 8,
+      "flags": {},
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.zTH9BlHy5KtHiQk4",
+      "cards": []
+    },
+    {
+      "_id": "aJ4lT5Igt5DNEN8G",
+      "name": "Succion de mana",
+      "description": "{\n  \"action\": \"-7 + @wis\",\n  \"zeal\": \"-1\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"1\",\n  \"nbTargets\": \"99999\",\n  \"mana\": \"XXX\",\n  \"xvalue\": \"nbTargets\",\n  \"other\": [\"Vous regagnez XXX point(s) de mana\"]\n}",
+      "type": "base",
+      "suit": "",
+      "value": null,
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Illusionniste/Niv%203/Succion%20de%20mana.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": "T6PMpPpuWngnosq0",
+      "rotation": 0,
+      "sort": 3,
+      "flags": {},
+      "system": {},
+      "_key": "!cards.cards!S46XvYfbwN84IIww.aJ4lT5Igt5DNEN8G",
+      "cards": []
+    }
+  ],
+  "rotation": 0,
+  "displayCount": false,
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {},
+  "_key": "!cards!S46XvYfbwN84IIww"
+}

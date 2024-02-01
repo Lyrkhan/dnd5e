@@ -1686,5 +1686,26 @@
   "Hint": "Disabling the token ring animations can improve performance."
 },
 
-"SOURCE.BOOK.SRD": "System Reference Document 5.1"
+"SOURCE.BOOK.SRD": "System Reference Document 5.1",
+
+"FQ8.ActionPoints": "Action Points",
+"FQ8.ActionPointsCurrent": "Current Action Points",
+"FQ8.ActionPointsMax": "Maximum Action Points",
+"FQ8.ManaPoints": "Mana",
+"FQ8.ManaPointsCurrent": "Current Mana",
+"FQ8.ManaPointsMax": "Maximum Mana",
+"FQ8.ZealPoints": "Zeal",
+"FQ8.ZealPointsCurrent": "Current Zeal",
+"FQ8.ZealPointsMax": "Maximum Zeal",
+"FQ8.ZealPointsInit": "Init Zeal",
+"FQ8.Attributes": "FQ Attributes",
+"FQ8.CriticalScore": "Critical",
+"FQ8.EvasionScore": "Evasion",
+"FQ8.Bonuses": "FQ Bonuses",
+"FQ8.RangeBonus": "Range Bonus",
+"FQ8.HitPointsOnTime": "Hit Points By Turns",
+"FQ8.Cards": "Cards",
+"FQ8.Hand": "Hand",
+"FQ8.Pick": "Pick",
+"FQ8.CurrentDrop": "Discard Card During Turn"
 }

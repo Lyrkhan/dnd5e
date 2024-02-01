@@ -1,0 +1,172 @@
+{
+  "name": "Gardien All",
+  "type": "deck",
+  "description": "",
+  "img": "systems/dnd5e/images/cartes/Gardien/Dos_de_carte.PNG",
+  "cards": [
+    {
+      "_id": "nQc266Z7nSz1CmV3",
+      "name": "Frappe héroïque",
+      "description": "[\n  {\n    \"name\": \"Utiliser 1 point de mana\",\n    \"damage\": \"3[slashing]+1d4[slashing]\",\n\"minReach\": \"1\",\"maxReach\": \"1\",\n    \"zeal\": \"1\",\n    \"mana\": \"-1\",\n    \"action\": \"-7\"\n  },\n  {\n    \"name\": \"Sacrifier 4 points de vie\",\n    \"damage\": \"3[slashing]+1d4[slashing]\",\n\"minReach\": \"1\",\"maxReach\": \"1\",\n    \"hp\": \"-4\",\n    \"zeal\": \"1\",\n    \"action\": \"-7\",\n    \"other\": [\n      \"Vous avez perdu 4 points de vie\"\n    ]\n  }\n]",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Gardien/Niv1/Frappe%20H%C3%A9ro%C3%AFque.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 0,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!u3sMJdr77pXLAsdb.nQc266Z7nSz1CmV3",
+      "cards": []
+    },
+    {
+      "_id": "NMSHRBesBMDtLbtY",
+      "name": "Pioche II",
+      "description": "{\"action\":\"-2\",\"draw\":\"2\",\"other\":[\"Vous piochez 2 cartes\"]}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Gardien/Niv1/Pioche.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 1,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!u3sMJdr77pXLAsdb.NMSHRBesBMDtLbtY",
+      "cards": []
+    },
+    {
+      "_id": "XUeEiBTddpl4bNGU",
+      "name": "Charge",
+      "description": "{\"action\":\"-3\",\"minReach\": \"1\",\"maxReach\": \"9\",\"other\":[\"Lancer 1d4 de dégâts supplémentaire(s) au prochain sort\",\"Déplacez vous vers une cible ennemie se trouvant à 9 cases ou moins\"]}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Gardien/Niv1/Charge.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 2,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!u3sMJdr77pXLAsdb.XUeEiBTddpl4bNGU",
+      "cards": []
+    },
+    {
+      "_id": "YCBBNUaw3A6ZV5i1",
+      "name": "Coup puissant",
+      "description": "{\n    \"damage\": \"7[bludgeoning]+1d10[bludgeoning]\",\"minReach\": \"1\",\"maxReach\": \"1\",\n    \"zeal\": \"-2\",\n    \"mana\": \"-1\",\n    \"action\": \"-8\"\n  }",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Gardien/Niv1/Coup%20puissant.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 3,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!u3sMJdr77pXLAsdb.YCBBNUaw3A6ZV5i1",
+      "cards": []
+    },
+    {
+      "_id": "zS85IHK6w5sLfqim",
+      "name": "Coup de bouclier",
+      "description": "{\"zeal\":\"-1\",\"reactif\":true,\"damage\":\"3[bludgeoning]+1d2[bludgeoning]\",\"minReach\": \"1\",\"maxReach\": \"6\",\"other\":[\"Déplacez vous sur une case adjacente à la cible\"]}",
+      "type": "base",
+      "suit": "",
+      "back": {
+        "name": "",
+        "text": "",
+        "img": null
+      },
+      "faces": [
+        {
+          "name": "",
+          "img": "systems/dnd5e/images/cartes/Gardien/Niv1/Coup%20de%20bouclier.PNG",
+          "text": ""
+        }
+      ],
+      "face": 0,
+      "drawn": false,
+      "origin": null,
+      "rotation": 0,
+      "sort": 4,
+      "flags": {},
+      "value": null,
+      "system": {},
+      "_key": "!cards.cards!u3sMJdr77pXLAsdb.zS85IHK6w5sLfqim",
+      "cards": []
+    }
+  ],
+  "rotation": 0,
+  "displayCount": false,
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_id": "u3sMJdr77pXLAsdb",
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {},
+  "_key": "!cards!u3sMJdr77pXLAsdb"
+}

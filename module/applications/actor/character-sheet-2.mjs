@@ -1,9 +1,9 @@
-import CharacterData from "../../data/actor/character.mjs";
 import * as Trait from "../../documents/actor/trait.mjs";
 import { simplifyBonus, staticID } from "../../utils.mjs";
 import ContextMenu5e from "../context-menu.mjs";
 import Tabs5e from "../tabs.mjs";
 import ActorSheet5eCharacter from "./character-sheet.mjs";
+import CharacterDataFQ from "../../data/actor/character-fq.mjs";
 
 /**
  * An Actor sheet for player character type actors.
@@ -190,7 +190,7 @@ export default class ActorSheet5eCharacter2 extends ActorSheet5eCharacter {
       context.cssClass += " collapsed";
       context.sidebarCollapsed = true;
     }
-    const { attributes, details, traits } = this.actor.system;
+    const { attributes, details, traits, fq } = this.actor.system;
 
     // Class
     context.labels.class = Object.values(this.actor.classes).sort((a, b) => {
@@ -232,6 +232,19 @@ export default class ActorSheet5eCharacter2 extends ActorSheet5eCharacter {
     // Hit Dice
     context.hd = { value: attributes.hd, max: this.actor.system.details.level };
     context.hd.pct = Math.clamped(context.hd.max ? (context.hd.value / context.hd.max) * 100 : 0, 0, 100);
+
+    // Action Points
+    context.action = fq.action;
+    context.action.pct = Math.clamped(context.action.max ? (context.action.value / context.action.max) * 100 : 0, 0, 100);
+    // Mana Points
+    context.mana = fq.mana;
+    context.mana.pct = Math.clamped(context.mana.max ? (context.mana.value / context.mana.max) * 100 : 0, 0, 100);
+    // Zeal Points
+    context.zeal = fq.zeal;
+    context.zeal.pct = Math.clamped(context.zeal.max ? (context.zeal.value / context.zeal.max) * 100 : 0, 0, 100);
+    // Movement Value by Squares
+    context.speed.squareValue = Math.trunc(context.speed.value / game.system.grid.distance)
+
 
     // Death Saves
     const plurals = new Intl.PluralRules(game.i18n.lang, { type: "ordinal" });
@@ -395,7 +408,7 @@ export default class ActorSheet5eCharacter2 extends ActorSheet5eCharacter {
     context.characteristics = [
       "alignment", "eyes", "height", "faith", "hair", "weight", "gender", "skin", "age"
     ].map(k => {
-      const fields = CharacterData.schema.fields.details.fields;
+      const fields = CharacterDataFQ.schema.fields.details.fields;
       const field = fields[k];
       const name = `system.details.${k}`;
       return { name, label: field.label, value: foundry.utils.getProperty(this.actor, name) ?? "" };

@@ -517,8 +517,8 @@ export function getHumanReadableAttributeLabel(attr, { actor }={}) {
 
   // Attempt to find the attribute in a data model.
   if ( !label ) {
-    const { CharacterData, NPCData, VehicleData, GroupData } = dnd5e.dataModels.actor;
-    for ( const model of [CharacterData, NPCData, VehicleData, GroupData] ) {
+    const { CharacterDataFQ, NPCDataFQ, VehicleData, GroupData } = dnd5e.dataModels.actor;
+    for ( const model of [CharacterDataFQ, NPCDataFQ, VehicleData, GroupData] ) {
       const field = model.schema.getField(attr);
       if ( field ) {
         label = field.label;
