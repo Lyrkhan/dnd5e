@@ -8,7 +8,7 @@
     {
       "_id": "0XmTT5oPhItCvY9S",
       "name": "Louve apprivoisée",
-      "description": "{\n  \"action\": \"-8\",\n  \"zeal\": \"-1\",\n  \"sound\": \"modules/final-quest-improvments/sounds/louve-apprivoisee.mp3\",\n  \"minions\": [\n    {\n      \"name\": \"Louve Apprivoisée\",\n      \"data\": {\n        \"hp\": \"10+@cha\",\n        \"damageBonus\": \"trunc(@cha/3)\",\n        \"movement\": \"5*(trunc(@cha/2)+4)\"\n      }\n    }\n  ],\n \"other\": [\"Une Louve apprivoisée a été invoquée\"]\n}",
+      "description": "{\n  \"action\": \"-8\",\n  \"zeal\": \"-1\",\n  \"sound\": \"modules/fq-card-engine/sounds/louve-apprivoisee.mp3\",\n  \"minions\": [\n    {\n      \"name\": \"Louve Apprivoisée\",\n      \"data\": {\n        \"hp\": \"10+@cha\",\n        \"damageBonus\": \"trunc(@cha/3)\",\n        \"movement\": \"5*(trunc(@cha/2)+4)\"\n      }\n    }\n  ],\n \"other\": [\"Une Louve apprivoisée a été invoquée\"]\n}",
       "type": "base",
       "suit": "",
       "back": {
