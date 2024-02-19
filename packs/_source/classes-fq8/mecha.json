@@ -1,0 +1,56 @@
+{
+  "_id": "SL8IBebqo5sy3msH",
+  "name": "Mecha",
+  "type": "class",
+  "img": "systems/dnd5e/images/classes/craiyon_155628_green_yellow_wood_stone_robot_warrior_fantasy_.png",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "cf": {
+      "id": "temp_9hjmr9g6fcm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p class=\"MsoNormal\" style=\"margin-bottom:.0001pt;text-align:right\"><span style=\"color:#2e74b5;mso-themecolor:accent1;mso-themeshade:191\">Le mécha construit son deck durant le combat. Il a donc à chaque partie un jeu différent</span></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "mecha",
+    "levels": 1,
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "51ohya2r2armiqtn",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {}
+      }
+    ],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "_key": "!items!SL8IBebqo5sy3msH"
+}

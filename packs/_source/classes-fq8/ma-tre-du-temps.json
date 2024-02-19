@@ -1,0 +1,56 @@
+{
+  "_id": "aEs8FMo1aqrqdxOG",
+  "name": "Maître du temps",
+  "type": "class",
+  "img": "systems/dnd5e/images/classes/craiyon_155142_time_mage_grey_old_fantasy_with_hourglass.png",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "cf": {
+      "id": "temp_9hjmr9g6fcm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p class=\"MsoNormal\" style=\"margin-bottom:.0001pt;text-align:right\"><span style=\"color:#2e74b5;mso-themecolor:accent1;mso-themeshade:191\">Le maître du temps est une classe très spéciale, avec seulement 4 points d'actions, elle va utiliser les dés, les positions et les caractéristiques de ses ennemis pour les retourner contre eux</span></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "maitre-du-temps",
+    "levels": 1,
+    "hitDice": "d4",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "jrmlbon8vfj023xa",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {}
+      }
+    ],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "_key": "!items!aEs8FMo1aqrqdxOG"
+}

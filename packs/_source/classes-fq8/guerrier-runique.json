@@ -1,0 +1,56 @@
+{
+  "_id": "RcQuxjpkKbHgQK3T",
+  "name": "Guerrier Runique",
+  "type": "class",
+  "img": "systems/dnd5e/images/classes/craiyon_155022_Blue_snow_nordic__viking_warrior_fantasy.png",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "cf": {
+      "id": "temp_9hjmr9g6fcm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p class=\"MsoNormal\" style=\"margin-bottom:.0001pt\"><span style=\"color:#2e74b5;mso-themecolor:accent1;mso-themeshade:191\">Les caractéristiques du guerrier runique sont dépendantes des runes qu'ils possèdent. Cette classe est donc plus performante en fin de partie. Il s'agit de la seule classe qui ne possède ni PA, ni PM, ni PZ.</span></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "guerrier-runique",
+    "levels": 1,
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "t1lgli81ftmgdlw2",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {}
+      }
+    ],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "_key": "!items!RcQuxjpkKbHgQK3T"
+}

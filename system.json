@@ -54,6 +54,15 @@
       "flags": {}
     },
     {
+      "name": "classes-fq8",
+      "label": "Classes (FQ8)",
+      "system": "dnd5e",
+      "path": "packs/classes-fq8",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "heroes",
       "label": "Starter Heroes",
       "system": "dnd5e",
@@ -188,7 +197,8 @@
             "decks-fq8-generated"
           ]
         }
-      ]
+      ],
+      "packs": ["classes-fq8"]
     },
     {
       "name": "D&D SRD Content",

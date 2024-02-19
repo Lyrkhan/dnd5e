@@ -1,0 +1,56 @@
+{
+  "_id": "YFWGlOU4KoNe0Z0h",
+  "name": "Gardien",
+  "type": "class",
+  "img": "systems/dnd5e/images/classes/craiyon_154454_Orange_Warrior_with_axe_and_shield_up.png",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "cf": {
+      "id": "temp_9hjmr9g6fcm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p class=\"MsoNormal\" style=\"margin-bottom:.0001pt;text-align:right\"><span style=\"color:#2e74b5;mso-themecolor:accent1;mso-themeshade:191\">Le gardien possède le plus grand nombre de points de vie du jeu et peut donc encaisser un grand nombre de dégâts. Il peut également choisir de puiser dans ses points de vie pour améliorer ses dégâts</span></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "gardien",
+    "levels": 1,
+    "hitDice": "d10",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "tyuq8w01f9ojqefa",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {}
+      }
+    ],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "_key": "!items!YFWGlOU4KoNe0Z0h"
+}

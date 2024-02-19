@@ -1,0 +1,56 @@
+{
+  "_id": "RDKjpBVG5EqTwHuY",
+  "name": "Moine",
+  "type": "class",
+  "img": "systems/dnd5e/images/classes/craiyon_153837_blue_monk_combatant_fantasy_martial_art.png",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "cf": {
+      "id": "temp_9hjmr9g6fcm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p class=\"MsoNormal\" style=\"margin-bottom:.0001pt;text-align:center\"><span style=\"color:#2e74b5;mso-themecolor:accent1;mso-themeshade:191\">Adepte d'un jeu très dynamique, le moine joue beaucoup de cartes différentes afin de monter rapidement son zèle. Le moine est robuste et son score d'esquive est élevé</span></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "moine",
+    "levels": 1,
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "kll5de4jz808tkqw",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {}
+      }
+    ],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "_key": "!items!RDKjpBVG5EqTwHuY"
+}

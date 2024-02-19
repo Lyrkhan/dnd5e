@@ -1,0 +1,56 @@
+{
+  "_id": "9RY2jWWuF6fcZCzO",
+  "name": "Gladiateur",
+  "type": "class",
+  "img": "systems/dnd5e/images/classes/craiyon_154812_warrior_very_dark_black_armor_and_multiple_weapons_gladiator.png",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "cf": {
+      "id": "temp_9hjmr9g6fcm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.316",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p class=\"MsoNormal\" style=\"margin-bottom:.0001pt\"><span style=\"color:#2e74b5;mso-themecolor:accent1;mso-themeshade:191\">Le gladiateur possède un arsenal très fournit d'armes. Suivant celles qu'il équipe, ces sorts s'en trouveront changer. C'est une classe très forte en fin de combat </span></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "identifier": "gladiateur",
+    "levels": 1,
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "ek3bik5bg6dkdis4",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {}
+      }
+    ],
+    "saves": [],
+    "skills": {
+      "number": 2,
+      "choices": [],
+      "value": []
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "_key": "!items!9RY2jWWuF6fcZCzO"
+}
