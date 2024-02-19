@@ -42,6 +42,18 @@
       "flags": {}
     },
     {
+      "name": "decks-fq8-generated",
+      "label": "Decks Final Quest 8 (générés)",
+      "path": "packs/decks-fq8-generated",
+      "type": "Cards",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
       "name": "heroes",
       "label": "Starter Heroes",
       "system": "dnd5e",
@@ -172,7 +184,8 @@
           "sorting": "m",
           "color": "#317d0e",
           "packs": [
-            "decks-final-quest-8"
+            "decks-final-quest-8",
+            "decks-fq8-generated"
           ]
         }
       ]
@@ -248,8 +261,10 @@
     }
   ],
   "socket": true,
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
   "primaryTokenAttribute": "attributes.hp",
   "background": "systems/dnd5e/ui/official/fq8-background.jpg",
   "flags": {
