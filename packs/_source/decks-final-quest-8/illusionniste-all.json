@@ -240,7 +240,7 @@
     {
       "_id": "x3m1pIKVBiOp17mS",
       "name": "Attaque latérale",
-      "description": "{\n  \"action\": \"-4\",\n  \"damage\": \"(@str+1d8)[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"1\",\n  \"nbTargets\": \"2*(1+XXX)\",\n  \"xvalue\": \"rangeBonus\",\n  \"customEval\": [\n    {\n      \"test\": \"!game.user.targets.size || ([...game.user.targets].filter(t =&gt;(t.x === game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.x)).length === [...game.user.targets].length) || ([...game.user.targets].filter(t =&gt;(t.y === game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.y)).length === [...game.user.targets].length)\",\n      \"message\": \"Les cibles doivent être sur la même ligne que le lanceur de sort\"\n    }\n  ]\n}",
+      "description": "{\n  \"action\": \"-4\",\n  \"damage\": \"(@str+1d8)[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"1\",\n  \"nbTargets\": \"2*(1+XXX)\",\n  \"xvalue\": \"rangeBonus\",\n  \"customEval\": [\n    {\n      \"test\": \"!game.user.targets.size || ([...game.user.targets].filter(t =>(t.x === game.canvas?.scene?.tokens?.find(t => t.actor?.id === game.user?.character?.id).data.x)).length === [...game.user.targets].length) || ([...game.user.targets].filter(t =>(t.y === game.canvas?.scene?.tokens?.find(t => t.actor?.id === game.user?.character?.id).data.y)).length === [...game.user.targets].length)\",\n      \"message\": \"Les cibles doivent être sur la même ligne que le lanceur de sort\"\n    }\n  ]\n}",
       "type": "base",
       "suit": "",
       "back": {
@@ -532,7 +532,7 @@
     {
       "_id": "c6dRAq4DXQiiSPvI",
       "name": "Peste Noire",
-      "description": "{\n  \"action\": \"-9\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"mana\": \"-1\",\n  \"zeal\": \"-1\",\n  \"replayable\": \"@con + 1\",\n  \"executeEval\": \"([...game.user.targets]).forEach( target =&gt; game.actors.get(target.data.actorId).createEmbeddedDocuments(\\\"ActiveEffect\\\", game.actors.get(target.data.actorId).data.effects.filter(t =&gt; t.data.flags.isFQEffects).map(ef =&gt; ef.data)))\"\n}",
+      "description": "{\n  \"action\": \"-9\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"mana\": \"-1\",\n  \"zeal\": \"-1\",\n  \"replayable\": \"@con + 1\",\n  \"executeEval\": \"([...game.user.targets]).forEach( target => game.actors.get(target.data.actorId).createEmbeddedDocuments(\\\"ActiveEffect\\\", game.actors.get(target.data.actorId).data.effects.filter(t => t.data.flags.isFQEffects).map(ef => ef.data)))\"\n}",
       "type": "base",
       "suit": "",
       "back": {
@@ -561,7 +561,7 @@
     {
       "_id": "qWTvPJsBE7kWU1FX",
       "name": "Attaque diagonale",
-      "description": "{\n  \"action\": \"-6\",\n  \"mana\": \"-1\",\n  \"zeal\": \"+1\",\n  \"damage\": \"(@str+1d12)[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"nbTargets\": \"4*(1+trunc(XXX/2))\",\n  \"xvalue\": \"rangeBonus\",\n  \"customEval\": [\n    {\n      \"test\": \"!game.user.targets.size || ([...game.user.targets].filter(t =&gt; Math.abs(t.x - game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.x) === Math.abs(t.y - game.canvas?.scene?.tokens?.find(t =&gt; t.actor?.id === game.user?.character?.id).data.y)).length === [...game.user.targets].length)\",\n      \"message\": \"Les cibles doivent être sur les diagonales du lanceur\"\n    }\n  ]\n}",
+      "description": "{\n  \"action\": \"-6\",\n  \"mana\": \"-1\",\n  \"zeal\": \"+1\",\n  \"damage\": \"(@str+1d12)[piercing]\",\n  \"minReach\": \"1\",\n  \"maxReach\": \"2\",\n  \"nbTargets\": \"4*(1+trunc(XXX/2))\",\n  \"xvalue\": \"rangeBonus\",\n  \"customEval\": [\n    {\n      \"test\": \"!game.user.targets.size || ([...game.user.targets].filter(t => Math.abs(t.x - game.canvas?.scene?.tokens?.find(t => t.actor?.id === game.user?.character?.id).data.x) === Math.abs(t.y - game.canvas?.scene?.tokens?.find(t => t.actor?.id === game.user?.character?.id).data.y)).length === [...game.user.targets].length)\",\n      \"message\": \"Les cibles doivent être sur les diagonales du lanceur\"\n    }\n  ]\n}",
       "type": "base",
       "suit": "",
       "value": null,
